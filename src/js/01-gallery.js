@@ -18,7 +18,7 @@ const ulGallery = galleryItems
     )
     .join("");
 
-ulSelector.innerHTML = ulGallery;
+ulSelector.insertAdjacentHTML('afterbegin', ulGallery);
 
 const lightbox = new SimpleLightbox('.gallery a', { 
     captionsData: "alt",
